@@ -1,5 +1,10 @@
 import React from "react";
 import { dataStats } from "@/types/dataStats";
+import shelterData from "@/app/mockData";
+
+// 1. Adoptions should check for total number of "status = adopted"
+// 2. Intake should be total in animals array that is not transferred or euthinized
+// 3. Try putting the shelterData in the values in dataStatsList (ex: value: shelterData.animals.length)
 
 const dataStatsList = [
   {
@@ -24,7 +29,7 @@ const dataStatsList = [
       </svg>
     ),
     color: "#3FD97F",
-    title: "Total Views",
+    title: "Total Intake",
     value: "3.456K",
     growthRate: 0.43,
   },
@@ -46,7 +51,7 @@ const dataStatsList = [
       </svg>
     ),
     color: "#FF9C55",
-    title: "Total Profit",
+    title: "Total Adoptions",
     value: "$42.2K",
     growthRate: 4.35,
   },
@@ -74,7 +79,7 @@ const dataStatsList = [
       </svg>
     ),
     color: "#8155FF",
-    title: "Total Product",
+    title: "Transfered",
     value: "2.450",
     growthRate: 2.59,
   },
@@ -112,7 +117,7 @@ const dataStatsList = [
       </svg>
     ),
     color: "#18BFFF",
-    title: "Total Users",
+    title: "Euthinized",
     value: "3.465",
     growthRate: -0.95,
   },

@@ -28,7 +28,7 @@ const shelterData = {
       "id": "A12347",
       "color": "Yellow",
       "breed": "Canary",
-      "status": "Available"
+      "status": "Transferred"
     },
     {
       "intake": "2024-09-25",
