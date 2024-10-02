@@ -7,8 +7,12 @@ import TableOne from "../Tables/TableOne";
 import MapOne from "../Maps/MapOne";
 import DataStatsOne from "@/components/DataStats/DataStatsOne";
 import ChartOne from "@/components/Charts/ChartOne";
+import shelterData from "@/app/mockData"
 
 const ECommerce: React.FC = () => {
+
+  console.log(JSON.stringify(shelterData));
+
   return (
     <>
       <DataStatsOne />
