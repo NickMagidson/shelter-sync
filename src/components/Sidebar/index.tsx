@@ -40,7 +40,7 @@ const menuGroups = [
           </svg>
         ),
         label: "Dashboard",
-        route: "#",
+        route: "/",
       },
       // {
       //   icon: (
@@ -157,8 +157,8 @@ const menuGroups = [
             />
           </svg>
         ),
-        label: "Tables",
-        route: "/tables",
+        label: "Animals",
+        route: "/animals",
       },
       // {
       //   icon: (

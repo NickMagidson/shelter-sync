@@ -1,5 +1,6 @@
 import { BRAND } from "@/types/brand";
 import Image from "next/image";
+import shelterData from "@/app/mockData";
 
 const brandData: BRAND[] = [
   {
@@ -80,7 +81,7 @@ const TableOne = () => {
           </div>
         </div>
 
-        {brandData.map((brand, key) => (
+        {shelterData.animals.map((brand, key) => (
           <div
             className={`grid grid-cols-3 sm:grid-cols-5 ${
               key === brandData.length - 1
@@ -90,9 +91,9 @@ const TableOne = () => {
             key={key}
           >
             <div className="flex items-center gap-3.5 px-2 py-4">
-              <div className="flex-shrink-0">
+              {/* <div className="flex-shrink-0">
                 <Image src={brand.logo} alt="Brand" width={48} height={48} />
-              </div>
+              </div> */}
               <p className="hidden font-medium text-dark dark:text-white sm:block">
                 {brand.name}
               </p>
@@ -100,25 +101,25 @@ const TableOne = () => {
 
             <div className="flex items-center justify-center px-2 py-4">
               <p className="font-medium text-dark dark:text-white">
-                {brand.visitors}K
+                {brand.species}
               </p>
             </div>
 
             <div className="flex items-center justify-center px-2 py-4">
               <p className="font-medium text-green-light-1">
-                ${brand.revenues}
+                {brand.breed}
               </p>
             </div>
 
             <div className="hidden items-center justify-center px-2 py-4 sm:flex">
               <p className="font-medium text-dark dark:text-white">
-                {brand.sales}
+                {brand.color}
               </p>
             </div>
 
             <div className="hidden items-center justify-center px-2 py-4 sm:flex">
               <p className="font-medium text-dark dark:text-white">
-                {brand.conversion}%
+                {brand.status}
               </p>
             </div>
           </div>

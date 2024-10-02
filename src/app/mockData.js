@@ -8,7 +8,7 @@ const shelterData = {
       "id": "A12345",
       "color": "Brown",
       "breed": "Labrador Retriever",
-      "status": "Adoptable"
+      "status": "Available"
     },
     {
       "intake": "2024-09-20",
@@ -28,7 +28,7 @@ const shelterData = {
       "id": "A12347",
       "color": "Yellow",
       "breed": "Canary",
-      "status": "Adoptable"
+      "status": "Available"
     },
     {
       "intake": "2024-09-25",
@@ -38,7 +38,7 @@ const shelterData = {
       "id": "A12348",
       "color": "Black",
       "breed": "German Shepherd",
-      "status": "Adoptable"
+      "status": "Pending"
     },
     {
       "intake": "2024-09-26",
@@ -48,7 +48,7 @@ const shelterData = {
       "id": "A12349",
       "color": "White",
       "breed": "Siamese",
-      "status": "Fostered"
+      "status": "Adopted"
     },
     {
       "intake": "2024-09-27",
@@ -58,7 +58,7 @@ const shelterData = {
       "id": "A12350",
       "color": "Golden",
       "breed": "Golden Retriever",
-      "status": "Adoptable"
+      "status": "Available"
     },
     {
       "intake": "2024-09-28",
@@ -68,7 +68,7 @@ const shelterData = {
       "id": "A12351",
       "color": "White",
       "breed": "Angora",
-      "status": "Adoptable"
+      "status": "Pending"
     },
     {
       "intake": "2024-09-29",
@@ -78,7 +78,7 @@ const shelterData = {
       "id": "A12352",
       "color": "Brown",
       "breed": "Boxer",
-      "status": "Adoptable"
+      "status": "Available"
     },
     {
       "intake": "2024-09-30",
@@ -88,7 +88,7 @@ const shelterData = {
       "id": "A12353",
       "color": "Black",
       "breed": "Domestic Shorthair",
-      "status": "Adoptable"
+      "status": "Pending"
     },
     {
       "intake": "2024-10-01",
@@ -108,7 +108,7 @@ const shelterData = {
       "id": "A12355",
       "color": "Green",
       "breed": "Parrot",
-      "status": "Adoptable"
+      "status": "Available"
     },
     {
       "intake": "2024-10-03",
@@ -118,7 +118,7 @@ const shelterData = {
       "id": "A12356",
       "color": "Brindle",
       "breed": "Bulldog",
-      "status": "Adoptable"
+      "status": "Pending"
     },
     {
       "intake": "2024-10-04",
@@ -128,7 +128,7 @@ const shelterData = {
       "id": "A12357",
       "color": "White",
       "breed": "Maine Coon",
-      "status": "Adoptable"
+      "status": "Available"
     }
   ],
   "people": [
