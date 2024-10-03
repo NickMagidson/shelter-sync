@@ -53,72 +53,80 @@ const TableOne = () => {
       </h4>
 
       <div className="flex flex-col">
-        <div className="grid grid-cols-3 sm:grid-cols-5">
+        <div className="grid grid-cols-3 sm:grid-cols-6">
+        <div className="px-2 pb-3.5">
+            <h5 className="text-sm font-medium uppercase xsm:text-base">
+              Photo
+            </h5>
+          </div>
           <div className="px-2 pb-3.5">
             <h5 className="text-sm font-medium uppercase xsm:text-base">
-              Source
+              Name
             </h5>
           </div>
-          <div className="px-2 pb-3.5 text-center">
+          <div className="px-2 pb-3.5 text-left">
             <h5 className="text-sm font-medium uppercase xsm:text-base">
-              Visitors
+              Species
             </h5>
           </div>
-          <div className="px-2 pb-3.5 text-center">
+          <div className="px-2 pb-3.5 text-left">
             <h5 className="text-sm font-medium uppercase xsm:text-base">
-              Revenues
+              Breed
             </h5>
           </div>
-          <div className="hidden px-2 pb-3.5 text-center sm:block">
+          <div className="hidden px-2 pb-3.5 text-left sm:block">
             <h5 className="text-sm font-medium uppercase xsm:text-base">
-              Sales
+              Color
             </h5>
           </div>
-          <div className="hidden px-2 pb-3.5 text-center sm:block">
+          <div className="hidden px-2 pb-3.5 text-left sm:block">
             <h5 className="text-sm font-medium uppercase xsm:text-base">
-              Conversion
+              Status
             </h5>
           </div>
         </div>
 
         {shelterData.animals.map((brand, key) => (
           <div
-            className={`grid grid-cols-3 sm:grid-cols-5 ${
+            className={`grid grid-cols-3 sm:grid-cols-6 ${
               key === brandData.length - 1
                 ? ""
                 : "border-b border-stroke dark:border-dark-3"
             }`}
             key={key}
           >
-            <div className="flex items-center gap-3.5 px-2 py-4">
-              {/* <div className="flex-shrink-0">
-                <Image src={brand.logo} alt="Brand" width={48} height={48} />
-              </div> */}
-              <p className="hidden font-medium text-dark dark:text-white sm:block">
+            <div className="hidden items-center justify-start px-2 py-4 sm:flex">
+              <div className="flex-shrink-0">
+                <Image src={brand.picture} alt="Brand" width={48} height={48} />
+              </div>
+            </div>
+
+            <div className="flex items-center justify-start px-2 py-4">
+              <p className="block font-medium text-dark dark:text-white sm:block">
                 {brand.name}
               </p>
             </div>
 
-            <div className="flex items-center justify-center px-2 py-4">
+            <div className="flex items-center justify-start px-2 py-4">
               <p className="font-medium text-dark dark:text-white">
                 {brand.species}
               </p>
             </div>
 
-            <div className="flex items-center justify-center px-2 py-4">
-              <p className="font-medium text-green-light-1">
+            <div className="flex items-center justify-start px-2 py-4">
+              <p className="font-medium text-dark dark:text-white">
                 {brand.breed}
               </p>
             </div>
 
-            <div className="hidden items-center justify-center px-2 py-4 sm:flex">
+            <div className="hidden items-center justify-start px-2 py-4 sm:flex">
               <p className="font-medium text-dark dark:text-white">
                 {brand.color}
               </p>
             </div>
 
-            <div className="hidden items-center justify-center px-2 py-4 sm:flex">
-              <p className="font-medium text-dark dark:text-white">
+            <div className="hidden items-center justify-start px-2 py-4 sm:flex">
+              <p className="font-medium text-green-light-1">
                 {brand.status}
               </p>
             </div>

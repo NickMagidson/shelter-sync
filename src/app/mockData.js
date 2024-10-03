@@ -2,7 +2,7 @@ const shelterData = {
   "animals": [
     {
       "intake": "2024-09-15",
-      "picture": "https://example.com/images/animal1.jpg",
+      "picture": "https://www.dogsforgood.org/app/uploads/2020/06/Dogs-For-Good-October-22-2019-308.jpg",
       "species": "Dog",
       "name": "Buddy",
       "id": "A12345",
